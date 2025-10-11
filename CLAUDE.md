@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-**Finwise** is a Next.js 14 landing page template built with TypeScript and Tailwind CSS. It's designed to be a highly configurable and customizable starting point for product launches, portfolios, or promotional sites. The template is forked/based on the Finwise template and uses modern web technologies including Framer Motion for animations and React Icons for iconography.
+**FitMove** is a Next.js 14 fitness app landing page built with TypeScript and Tailwind CSS. It's designed to showcase a comprehensive fitness management platform with features like workout tracking, progress monitoring, and personalized training plans. The site uses modern web technologies including React Icons for iconography and a clean, professional design system.
 
 ## Development Commands
 
@@ -53,14 +53,16 @@ src/
 All site content lives in `/src/data/`:
 
 - **`siteDetails.ts`**: Core site metadata, branding, URLs, GA ID, logo configuration
-- **`menuItems.ts`**: Navigation menu items
-- **`hero.ts`**: Hero section content
-- **`benefits.tsx`**: Feature/benefit sections (note: uses `.tsx` for React Icons)
-- **`pricing.ts`**: Pricing tier data
+- **`menuItems.ts`**: Navigation menu items (Home, About, Membership, Contact)
+- **`hero.ts`**: Hero section content with badge, heading, and CTA
+- **`about.ts`**: About section with stats card (50K+ users, 4.8 rating, 120+ programs, 98% retention)
+- **`coreValues.tsx`**: Four core value cards (Performance-Oriented, User-Friendly, Personalized, Data-Driven)
+- **`howItWorks.ts`**: 4-step onboarding process
+- **`pricing.ts`**: Pricing tier data (Starter, Pro, Elite, Team Plan)
 - **`testimonials.ts`**: Customer testimonials
 - **`faq.ts`**: FAQ items
-- **`stats.tsx`**: Statistics section data
-- **`cta.ts`**: Call-to-action content
+- **`blog.ts`**: Blog post previews
+- **`cta.ts`**: Call-to-action content for app download
 - **`footer.ts`**: Footer links and social media handles
 
 **Important**: When customizing content, always edit the data files first. Never hardcode content in components.
@@ -74,12 +76,16 @@ The design system uses CSS custom properties defined in `src/app/globals.css`:
 ```css
 :root {
   --background: #ffffff;
-  --foreground: #171717;
-  --primary: #FED835;        /* Main brand color */
-  --secondary: #304fff;       /* Secondary brand color */
-  --primary-accent: #e5c230;  /* Primary hover state */
-  --foreground-accent: #454545; /* Text hover state */
-  --hero-background: #F3F3F5; /* Hero section background */
+  --foreground: #0c0a09;     /* Stone-950 */
+  --primary: #fef08a;         /* Yellow-200 */
+  --secondary: #bfdbfe;       /* Blue-200 */
+  --primary-accent: #fde047;  /* Yellow-300 */
+  --foreground-accent: #64748b; /* Slate-500 */
+  --hero-background: #f0f9ff; /* Sky-50 */
+  --lime: #d9f99d;           /* Lime-200 */
+  --lime-accent: #bef264;    /* Lime-300 */
+  --sky: #e0f2fe;            /* Sky-100 */
+  --neutral: #fafaf9;        /* Neutral-50 */
 }
 ```
 
@@ -87,8 +93,8 @@ These variables are mapped to Tailwind utilities in `tailwind.config.ts`. To cha
 
 ### Typography
 
-- **Body font**: Source Sans 3 (Google Fonts)
-- **Heading font**: Manrope (Google Fonts)
+- **Primary font**: Figtree (Google Fonts) - used for all text
+- Font weights: 400 (normal), 500 (medium), 600 (semibold), 700 (bold)
 - Fonts are optimized using Next.js `next/font` in `layout.tsx`
 
 ## Component Patterns

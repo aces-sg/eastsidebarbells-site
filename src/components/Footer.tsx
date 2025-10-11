@@ -1,66 +1,54 @@
 import Link from 'next/link';
 import React from 'react';
-import { FaFingerprint } from 'react-icons/fa';
-
+import Logo from './Logo';
 import { siteDetails } from '@/data/siteDetails';
-import { footerDetails } from '@/data/footer';
-import { getPlatformIconByName } from '@/utils';
+import { menuItems } from '@/data/menuItems';
 
 const Footer: React.FC = () => {
     return (
-        <footer className="bg-hero-background text-foreground py-10">
-            <div className="max-w-7xl w-full mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-10">
-                <div>
-                    <Link href="/" className="flex items-center gap-2">
-                        <FaFingerprint className="min-w-fit w-5 h-5 md:w-7 md:h-7" />
-                        <h3 className="manrope text-xl font-semibold cursor-pointer">
-                            {siteDetails.siteName}
-                        </h3>
-                    </Link>
-                    <p className="mt-3.5 text-foreground-accent">
-                        {footerDetails.subheading}
-                    </p>
+        <footer id="contact" className="w-full px-6 lg:px-28 py-20 flex flex-col justify-start items-start gap-8">
+            <div className="w-full flex flex-col lg:flex-row justify-between items-center gap-8">
+                <Link href="/" className="flex justify-start items-center gap-1.5">
+                    <Logo />
+                    <div className="justify-start text-stone-950 text-2xl lg:text-3xl font-medium leading-loose">
+                        {siteDetails.siteName}
+                    </div>
+                </Link>
+                <div className="flex justify-start items-center gap-8 lg:gap-14 flex-wrap justify-center">
+                    {menuItems.map((item) => (
+                        <Link
+                            key={item.text}
+                            href={item.url}
+                            className="text-slate-500 text-base font-medium leading-relaxed hover:text-stone-950 transition-colors"
+                        >
+                            {item.text}
+                        </Link>
+                    ))}
                 </div>
-                <div>
-                    <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
-                    <ul className="text-foreground-accent">
-                        {footerDetails.quickLinks.map(link => (
-                            <li key={link.text} className="mb-2">
-                                <Link href={link.url} className="hover:text-foreground">{link.text}</Link>
-                            </li>
-                        ))}
-                    </ul>
-                </div>
-                <div>
-                    <h4 className="text-lg font-semibold mb-4">Contact Us</h4>
-
-                    {footerDetails.email && <a href={`mailto:${footerDetails.email}`}  className="block text-foreground-accent hover:text-foreground">Email: {footerDetails.email}</a>}
-
-                    {footerDetails.telephone && <a href={`tel:${footerDetails.telephone}`} className="block text-foreground-accent hover:text-foreground">Phone: {footerDetails.telephone}</a>}
-
-                    {footerDetails.socials && (
-                        <div className="mt-5 flex items-center gap-5 flex-wrap">
-                            {Object.keys(footerDetails.socials).map(platformName => {
-                                if (platformName && footerDetails.socials[platformName]) {
-                                    return (
-                                        <Link
-                                            href={footerDetails.socials[platformName]}
-                                            key={platformName}
-                                            aria-label={platformName}
-                                        >
-                                            {getPlatformIconByName(platformName)}
-                                        </Link>
-                                    )
-                                }
-                            })}
-                        </div>
-                    )}
+                <div className="flex justify-center items-center gap-6">
+                    <div className="w-10 h-10 p-4 rounded-[99px] border border-slate-500 flex justify-center items-center gap-2 hover:bg-sky-50 transition-colors cursor-pointer">
+                        <div className="text-slate-500 text-xs font-bold leading-normal">FB</div>
+                    </div>
+                    <div className="w-10 h-10 p-4 rounded-[99px] border border-slate-500 flex justify-center items-center gap-2 hover:bg-sky-50 transition-colors cursor-pointer">
+                        <div className="text-slate-500 text-xs font-bold leading-normal">IN</div>
+                    </div>
+                    <div className="w-10 h-10 p-4 rounded-[99px] border border-slate-500 flex justify-center items-center gap-2 hover:bg-sky-50 transition-colors cursor-pointer">
+                        <div className="text-center text-slate-500 text-xs font-bold leading-normal">IG</div>
+                    </div>
                 </div>
             </div>
-            <div className="mt-8 md:text-center text-foreground-accent px-6">
-                <p>Copyright &copy; {new Date().getFullYear()} {siteDetails.siteName}. All rights reserved.</p>
-                <p className="text-sm mt-2 text-gray-500">Made with &hearts; by <a href="https://nexilaunch.com" target="_blank">Nexi Launch</a></p>
-                <p className="text-sm mt-2 text-gray-500">UI kit by <a href="https://ui8.net/youthmind/products/fintech-finance-mobile-app-ui-kit" target="_blank">Youthmind</a></p>
+            <div className="w-full pt-8 border-t border-black/10 flex flex-col lg:flex-row justify-between items-center gap-4">
+                <div className="text-center text-slate-500 text-sm font-normal leading-tight">
+                    © {new Date().getFullYear()} FitMove. All rights reserved.
+                </div>
+                <div className="flex justify-start items-center gap-4">
+                    <Link href="#" className="opacity-80 text-center text-slate-500 text-sm font-normal leading-tight hover:opacity-100 transition-opacity">
+                        Privacy & Policy
+                    </Link>
+                    <Link href="#" className="opacity-80 text-center text-slate-500 text-sm font-normal leading-tight hover:opacity-100 transition-opacity">
+                        Help Center
+                    </Link>
+                </div>
             </div>
         </footer>
     );

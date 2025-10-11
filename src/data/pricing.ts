@@ -3,35 +3,50 @@ import { IPricing } from "@/types";
 export const tiers: IPricing[] = [
     {
         name: 'Starter',
-        price: 29,
+        price: 0,
         features: [
-            'Basic cloud integration',
-            'Up to 5 team members',
-            '20GB storage',
-            'Email support',
+            'Basic workout planner',
+            'Scheduling & Reminders',
+            'Progress tracker',
+            'Limited challenges',
         ],
+        description: 'Perfect for those just beginning their fitness features to kickstart routine',
+        recommended: false
     },
     {
         name: 'Pro',
-        price: 99,
+        price: 15,
         features: [
-            'Advanced cloud integration',
-            'Up to 20 team members',
-            '100GB storage',
-            'Priority email & phone support',
-            'Advanced analytics',
+            'Everything in Starter',
+            'AI training adjustments',
+            'Meal & hydration log',
+            'Limited challenges',
         ],
+        description: 'Elevate your fitness journey with the Pro plan, for training to the next level',
+        recommended: true
     },
     {
-        name: 'Enterprise',
-        price: 'Custom',
+        name: 'Elite',
+        price: 29,
         features: [
-            'Full cloud integration',
-            'Unlimited team members',
-            'Unlimited storage',
-            '24/7 dedicated support',
-            'Custom solutions',
-            'On-site training',
+            'Everything in Pro',
+            'Basic workout planner',
+            'Live virtual classes',
+            'Advanced analytics',
         ],
+        description: 'For the ultimate fitness enthusiast and those committed.',
+        recommended: false
+    },
+    {
+        name: 'Team Plan',
+        price: 49,
+        features: [
+            'Everything in Elite',
+            'Basic workout planner',
+            'Trainer dashboard',
+            'Team progress reports',
+        ],
+        description: 'The Team plan is perfect for groups, businesses, or families.',
+        recommended: false
     },
 ]

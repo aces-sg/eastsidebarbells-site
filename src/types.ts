@@ -20,6 +20,8 @@ export interface IPricing {
     name: string;
     price: number | string;
     features: string[];
+    description?: string;
+    recommended?: boolean;
 }
 
 export interface IFAQ {

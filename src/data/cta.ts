@@ -1,6 +1,7 @@
 export const ctaDetails = {
-    heading: 'Join Over 1 Million Users To Transform Your Finances',
-    subheading: 'Your journey to financial freedom starts here. Download Finwise today and take the first step towards a brighter financial future!',
-    appStoreUrl: '#',
-    googlePlayUrl: '#'
+    badge: "Make Every Movement Matter",
+    heading: "FitMove in Your Pocket",
+    subheading: "Stay on track wherever you go—download the FitMove app for seamless fitness management anytime, anywhere.",
+    ctaText: "Download Now",
+    ctaLink: "#"
 }

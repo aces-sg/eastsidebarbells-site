@@ -1,12 +1,12 @@
 export const siteDetails = {
-    siteName: 'Finwise',
-    siteUrl: 'https://finwise-omega.vercel.app/',
+    siteName: 'FitMove',
+    siteUrl: 'https://fitmove-app.vercel.app/',
     metadata: {
-        title: 'Finwise - Next.js and Tailwind CSS Landing Page Template',
-        description: 'Finwise empowers businesses with cutting-edge technology solutions to drive success and efficiency.',
+        title: 'FitMove - Every Rep Counts, Make It Matter',
+        description: 'Our all-in-one fitness management solution empowers you to revolutionize your fitness journey. Seamlessly train smarter, optimizing your workouts.',
     },
     language: 'en-us',
     locale: 'en-US',
-    siteLogo: `${process.env.BASE_PATH || ''}/images/logo.png`, // or use a string for the logo e.g. "TechStartup"
+    siteLogo: 'FitMove', // Using text logo
     googleAnalyticsId: '', // e.g. G-XXXXXXX,
 }

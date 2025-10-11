@@ -1,28 +1,41 @@
+import React from 'react';
+import Link from 'next/link';
 import { ctaDetails } from "@/data/cta"
-
-import AppStoreButton from "./AppStoreButton"
-import PlayStoreButton from "./PlayStoreButton"
 
 const CTA: React.FC = () => {
     return (
-        <section id="cta" className="mt-10 mb-5 lg:my-20">
-            <div className="relative h-full w-full z-10 mx-auto py-12 sm:py-20">
-                <div className="h-full w-full">
-                    <div className="rounded-3xl opacity-95 absolute inset-0 -z-10 h-full w-full bg-[#050a02] bg-[linear-gradient(to_right,#12170f_1px,transparent_1px),linear-gradient(to_bottom,#12170f_1px,transparent_1px)] bg-[size:6rem_4rem]">
-                        <div className="rounded-3xl absolute bottom-0 left-0 right-0 top-0 bg-[radial-gradient(circle_600px_at_50%_500px,#1C1C02,transparent)]"></div>
-                    </div>
-
-                    <div className="h-full flex flex-col items-center justify-center text-white text-center px-5">
-                        <h2 className="text-2xl sm:text-3xl md:text-5xl md:leading-tight font-semibold mb-4 max-w-2xl">{ctaDetails.heading}</h2>
-
-                        <p className="mx-auto max-w-xl md:px-5">{ctaDetails.subheading}</p>
-
-                        <div className="mt-4 flex flex-col sm:flex-row items-center sm:gap-4">
-                        <AppStoreButton />
-                        <PlayStoreButton />
+        <section id="cta" className="w-full px-6 lg:px-40 py-14 bg-lime-200 flex flex-col lg:flex-row justify-start items-center gap-12 lg:gap-24 overflow-hidden relative">
+            <div className="hidden lg:block w-[907px] h-[907px] rounded-full border border-lime-50 absolute -left-96" />
+            <div className="hidden lg:block w-[1184px] h-[1184px] rounded-full border border-lime-50 absolute -left-[500px]" />
+            <div className="flex-1 flex flex-col justify-center items-start gap-12 lg:gap-20 z-10">
+                <div className="w-full flex flex-col justify-start items-start gap-4">
+                    <div className="h-10 px-4 pt-3.5 pb-4 bg-lime-100 rounded-[500px] inline-flex justify-center items-center gap-2 overflow-hidden">
+                        <div className="justify-start text-stone-950 text-base font-semibold leading-tight">
+                            {ctaDetails.badge}
                         </div>
                     </div>
+                    <h2 className="w-full text-stone-950 text-3xl lg:text-5xl font-medium capitalize leading-tight lg:leading-[60px]">
+                        {ctaDetails.heading}
+                    </h2>
+                    <p className="w-full text-stone-950 text-base font-normal leading-relaxed">
+                        {ctaDetails.subheading}
+                    </p>
                 </div>
+                <Link
+                    href={ctaDetails.ctaLink}
+                    className="h-11 px-6 pt-3.5 pb-4 bg-white rounded-lg inline-flex justify-center items-center gap-2 overflow-hidden hover:bg-gray-50 transition-colors"
+                >
+                    <div className="justify-start text-stone-950 text-base font-semibold leading-tight">
+                        {ctaDetails.ctaText}
+                    </div>
+                </Link>
+            </div>
+            <div className="flex flex-col justify-start items-start gap-6 z-10">
+                <div className="flex justify-start items-center gap-6">
+                    <div className="w-32 lg:w-44 h-40 lg:h-56 bg-white rounded-2xl" />
+                    <div className="w-64 lg:w-96 h-40 lg:h-56 bg-white rounded-2xl" />
+                </div>
+                <div className="w-full lg:w-[634px] h-32 lg:h-48 bg-white rounded-2xl" />
             </div>
         </section>
     )
