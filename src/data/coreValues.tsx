@@ -1,4 +1,4 @@
-import { FiTrendingUp, FiUser, FiTarget, FiBarChart } from "react-icons/fi";
+import { FiZap, FiActivity, FiCheckCircle, FiTrendingUp } from "react-icons/fi";
 
 export interface ICoreValue {
     title: string;
@@ -8,23 +8,23 @@ export interface ICoreValue {
 
 export const coreValues: ICoreValue[] = [
     {
-        title: "Performance-Oriented",
-        description: "Our platform is built for athletes, trainers, and beginners alike.",
+        title: "Simplicity",
+        description: "Consistency beats complexity. Half the battle is won the moment you show up—we make sure you keep showing up.",
+        icon: <FiZap className="w-8 h-8 text-lime-700" />
+    },
+    {
+        title: "Strength & Power",
+        description: "Strength and power are the foundation of real fitness. They allow you to increase your work capacity and make every minute count.",
+        icon: <FiActivity className="w-8 h-8 text-lime-700" />
+    },
+    {
+        title: "Technical Mastery",
+        description: "The best workouts prioritize quality over numbers. Focus on technique, and you'll build real fitness that lasts—injury-free.",
+        icon: <FiCheckCircle className="w-8 h-8 text-lime-700" />
+    },
+    {
+        title: "Progressive Overload",
+        description: "Add reps, increase weight, or move faster—these are the signs of progress. Tracking your numbers keeps you improving and motivated week after week.",
         icon: <FiTrendingUp className="w-8 h-8 text-lime-700" />
-    },
-    {
-        title: "User-Friendly Interface",
-        description: "Our platform features an intuitive and easy-to-navigate interface",
-        icon: <FiUser className="w-8 h-8 text-lime-700" />
-    },
-    {
-        title: "Personalized Experience",
-        description: "Our platform provides a personalized experience tailored to meet your needs.",
-        icon: <FiTarget className="w-8 h-8 text-lime-700" />
-    },
-    {
-        title: "Data-Driven Insights",
-        description: "We go beyond basic metrics, transforming raw data into clear.",
-        icon: <FiBarChart className="w-8 h-8 text-lime-700" />
     }
 ];

@@ -1,24 +1,29 @@
 import { IFAQ } from "@/types";
 
 export const faqs: IFAQ[] = [
-    {
-        question: 'Is FitMove suitable for beginners?',
-        answer: 'Yes! FitMove is designed for all levels, from beginner to advanced.'
-    },
-    {
-        question: 'Can I cancel my subscription anytime?',
-        answer: 'Yes, you can cancel your subscription anytime. No questions asked, no cancellation fees.'
-    },
-    {
-        question: 'Does it work on mobile and desktop?',
-        answer: 'Absolutely! FitMove works seamlessly on both mobile and desktop devices, syncing your progress across all platforms.'
-    },
-    {
-        question: 'Are workouts certified by professionals?',
-        answer: 'Yes! All our workout programs are designed and certified by professional trainers with years of experience.'
-    },
-    {
-        question: 'Can I track my diet too?',
-        answer: 'Yes! FitMove includes comprehensive meal and hydration tracking features in the Pro plan and above.'
-    }
+  {
+    question: "Is this kettlebell programme suitable for me?",
+    answer:
+      "Our kettlebell workouts are suited for all fitness levels, from beginners to advanced athletes. Scale your reps, load, or speed to match where you are today.",
+  },
+  {
+    question: "Is this  Free?",
+    answer:
+      "Yes, our weekly group workouts at Bishan Park are completely free. Just RSVP on Meetup and show up!",
+  },
+  {
+    question: "When are your group trainings?",
+    answer:
+      "We meet every Saturday at 7:30am at Bishan Park for a sunshine-filled kettlebell workout.",
+  },
+  {
+    question: "Can I bring a friend?",
+    answer:
+      "Absolutely! We encourage you to bring friends. The more the merrier—just make sure they RSVP on Meetup too. We need to ensure that we have the correct number of kettlebells needed for the program.",
+  },
+  {
+    question: "How do I register for a workout?",
+    answer:
+      "Simply RSVP through our Meetup page. We use Meetup to manage our sessions and track attendance.",
+  },
 ];

@@ -1,0 +1,10 @@
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Yellow block top-left -->
+  <rect width="16" height="16" fill="#FEF08A"/>
+  <!-- Lime block top-right -->
+  <rect x="16" width="8" height="8" fill="#D9F99D"/>
+  <!-- Blue block bottom-right -->
+  <rect x="16" y="16" width="16" height="16" fill="#DBEAFE"/>
+  <!-- Blue block bottom-left -->
+  <rect y="16" width="16" height="16" fill="#DBEAFE"/>
+</svg>

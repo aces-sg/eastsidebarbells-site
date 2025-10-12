@@ -20,7 +20,7 @@ const HomePage: React.FC = () => {
       <HowItWorks />
       <Testimonials />
       <Video />
-      <Pricing />
+      {/* <Pricing /> */}
       <FAQ />
       <Blog />
       <CTA />

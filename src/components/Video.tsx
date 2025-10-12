@@ -9,10 +9,10 @@ const Video: React.FC = () => {
                     <div className="justify-start text-stone-950 text-base font-semibold leading-tight">Video</div>
                 </div>
                 <h2 className="w-full lg:w-[962px] text-center text-stone-950 text-3xl lg:text-5xl font-medium capitalize leading-tight lg:leading-[60px]">
-                    Watch How FitMove Works
+                    Join our Workout Today
                 </h2>
                 <p className="w-full text-center text-slate-500 text-base font-normal leading-relaxed">
-                    See how FitMove helps you transform goals into achievements.
+                    See we train and grow together
                 </p>
             </div>
             <div className="w-full h-64 lg:h-[550px] bg-slate-200 rounded-[20px] flex justify-center items-center gap-2.5">

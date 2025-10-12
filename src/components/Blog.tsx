@@ -9,7 +9,7 @@ const Blog: React.FC = () => {
                     <div className="justify-start text-stone-950 text-base font-semibold leading-tight">Blog</div>
                 </div>
                 <h2 className="text-center text-stone-950 text-3xl lg:text-5xl font-medium capitalize leading-tight lg:leading-[60px]">
-                    From the FitMove Blog
+                    The Eastside Blog
                 </h2>
                 <p className="text-center text-slate-500 text-base font-normal leading-relaxed">
                     Tips, stories, and strategies to help you stay fit and focused.

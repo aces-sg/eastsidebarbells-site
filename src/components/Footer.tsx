@@ -39,7 +39,7 @@ const Footer: React.FC = () => {
             </div>
             <div className="w-full pt-8 border-t border-black/10 flex flex-col lg:flex-row justify-between items-center gap-4">
                 <div className="text-center text-slate-500 text-sm font-normal leading-tight">
-                    © {new Date().getFullYear()} FitMove. All rights reserved.
+                    © {new Date().getFullYear()} Eastsidebarbells. All rights reserved.
                 </div>
                 <div className="flex justify-start items-center gap-4">
                     <Link href="#" className="opacity-80 text-center text-slate-500 text-sm font-normal leading-tight hover:opacity-100 transition-opacity">

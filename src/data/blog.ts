@@ -6,17 +6,17 @@ export interface IBlogPost {
 
 export const blogPosts: IBlogPost[] = [
     {
-        title: "Top 10 Home Workouts You Can Do Without Equipment",
+        title: "The Ultimate Kettlebell Program for Fitness",
         category: "Fitness Tips",
         date: "March 3, 2035"
     },
     {
-        title: "How to Build a Sustainable Meal Plan for Weight Loss",
+        title: "Why Kettlebell Training is Better than Hyrox or Crossfit",
         category: "Nutrition",
         date: "March 1, 2035"
     },
     {
-        title: "Tracking Progress: Why Small Wins Matter in Fitness",
+        title: "The Benefits of Kettlebell Training for the Time-starved Professional",
         category: "Fitness Mindset",
         date: "February 26, 2035"
     }

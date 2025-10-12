@@ -5,31 +5,26 @@ export interface IStep {
 }
 
 export const howItWorksData = {
-    badge: "How it Works",
-    title: "Start Your Fitness Journey in 4 Easy Steps",
-    description: "From sign-up to seeing real results, FitMove makes every step seamless.",
-    ctaText: "Get Started Free",
-    ctaLink: "#pricing",
+    badge: "Join our workout",
+    title: "Kettlebells Sunshine & Strength @ Bishan Park",
+    description: "Join us on our weekly kettlebell circuits at Bishan Park to build your fitness with a community of like-minded individuals",
+    ctaText: "Register on Meetup",
+    ctaLink: "#cta",
     steps: [
         {
             number: "01",
-            title: "Create Your Profile",
-            description: "Take control of your fitness journey by setting your fitness level, goals, and preferences. Whether you're a beginner or an advanced athlete."
+            title: "RSVP on Meetup",
+            description: "Let us know you're coming. We use Meetup to manage our sessions and track attendance."
         },
         {
             number: "02",
-            title: "Choose a Program",
-            description: "Select from a variety of training plans tailored to your needs—no guesswork required. Our expert-designed plans cover everything."
+            title: "Join us at Bishan Park",
+            description: "Our weekly meetup is at Bishan Park. Join us at 7:30am every saturday for a sunshine-filled workout."
         },
         {
             number: "03",
-            title: "Track Daily Progress",
-            description: "Log your workouts, meals, and health metrics all in one place. Easily record your exercise sessions, track your daily food intake, and monitor key health."
-        },
-        {
-            number: "04",
             title: "Celebrate Results",
-            description: "Easily monitor improvements and earn badges as you progress. Watch your stats climb as you get stronger, faster, and healthier."
+            description: "Track your reps, weight, and effort level with our free app—and watch your progress over time."
         }
     ]
 };
