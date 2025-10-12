@@ -19,11 +19,11 @@ const HomePage: React.FC = () => {
       <Features />
       <HowItWorks />
       <Testimonials />
-      <Video />
+      {/* <Video /> */}
       {/* <Pricing /> */}
       <FAQ />
       <Blog />
-      <CTA />
+      {/* <CTA /> */}
     </>
   );
 };

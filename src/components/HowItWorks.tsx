@@ -6,9 +6,9 @@ const HowItWorks: React.FC = () => {
   return (
     <section
       id="how-it-works"
-      className="w-full p-6 lg:p-28 bg-sky-50 flex flex-col lg:flex-row justify-center items-start gap-12 overflow-hidden"
+      className="w-full p-6 lg:p-28 bg-sky-50 flex flex-col lg:flex-row justify-center items-center gap-12 overflow-hidden"
     >
-      <div className="w-full lg:w-96 flex flex-col justify-between items-start gap-8">
+      <div className="w-full lg:w-1/2 flex flex-col justify-center items-start gap-8">
         <div className="w-full flex flex-col justify-start items-start gap-4">
           <div className="h-10 px-4 pt-3.5 pb-4 bg-sky-100 rounded-[500px] inline-flex justify-center items-center gap-2 overflow-hidden">
             <div className="justify-start text-stone-950 text-base font-semibold leading-tight">
@@ -30,8 +30,22 @@ const HowItWorks: React.FC = () => {
             {howItWorksData.ctaText}
           </div>
         </Link>
+
+        {/* Google Map */}
+        <div className="w-full h-[400px] rounded-[20px] overflow-hidden">
+          <iframe
+            src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8&q=McDonald's+Bishan+Park,1378+Ang+Mo+Kio+Avenue+1+Singapore&zoom=15"
+            width="100%"
+            height="100%"
+            style={{ border: 0 }}
+            allowFullScreen
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+          />
+        </div>
       </div>
-      <div className="w-full lg:w-[567px] relative flex flex-col justify-start items-start gap-10 lg:gap-14">
+
+      <div className="w-full lg:w-1/2 relative flex flex-col justify-center items-start gap-10 lg:gap-14">
         <div className="hidden lg:block w-px h-96 absolute left-[20px] top-[1px] bg-slate-300"></div>
         {howItWorksData.steps.map((step, index) => (
           <div

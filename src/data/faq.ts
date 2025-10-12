@@ -7,7 +7,7 @@ export const faqs: IFAQ[] = [
       "Our kettlebell workouts are suited for all fitness levels, from beginners to advanced athletes. Scale your reps, load, or speed to match where you are today.",
   },
   {
-    question: "Is this  Free?",
+    question: "Is this Free Personal Training?",
     answer:
       "Yes, our weekly group workouts at Bishan Park are completely free. Just RSVP on Meetup and show up!",
   },
@@ -22,7 +22,7 @@ export const faqs: IFAQ[] = [
       "Absolutely! We encourage you to bring friends. The more the merrier—just make sure they RSVP on Meetup too. We need to ensure that we have the correct number of kettlebells needed for the program.",
   },
   {
-    question: "How do I register for a workout?",
+    question: "How do I register?",
     answer:
       "Simply RSVP through our Meetup page. We use Meetup to manage our sessions and track attendance.",
   },

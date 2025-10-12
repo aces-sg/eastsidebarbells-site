@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { ctaDetails } from "@/data/cta"
 
 const CTA: React.FC = () => {
@@ -33,10 +34,31 @@ const CTA: React.FC = () => {
             </div>
             <div className="w-full lg:w-auto flex flex-col justify-start items-start gap-4 lg:gap-6 z-10">
                 <div className="w-full flex justify-start items-center gap-4 lg:gap-6">
-                    <div className="w-32 lg:w-44 h-40 lg:h-56 bg-white rounded-2xl" />
-                    <div className="flex-1 lg:w-96 h-40 lg:h-56 bg-white rounded-2xl" />
+                    <div className="w-32 lg:w-44 h-40 lg:h-56 bg-white rounded-2xl relative overflow-hidden">
+                        <Image
+                            src="/images/bishan-park-1.webp"
+                            alt="Bishan Park workout"
+                            fill
+                            className="object-cover"
+                        />
+                    </div>
+                    <div className="flex-1 lg:w-96 h-40 lg:h-56 bg-white rounded-2xl relative overflow-hidden">
+                        <Image
+                            src="/images/bishan-park-2.webp"
+                            alt="Kettlebell training"
+                            fill
+                            className="object-cover"
+                        />
+                    </div>
                 </div>
-                <div className="w-full lg:w-[634px] h-32 lg:h-48 bg-white rounded-2xl" />
+                <div className="w-full lg:w-[634px] h-32 lg:h-48 bg-white rounded-2xl relative overflow-hidden">
+                    <Image
+                        src="/images/bishan-park-3.webp"
+                        alt="Group fitness at Bishan Park"
+                        fill
+                        className="object-cover"
+                    />
+                </div>
             </div>
         </section>
     )

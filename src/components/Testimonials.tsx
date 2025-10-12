@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
 
 const Testimonials: React.FC = () => {
@@ -41,7 +42,14 @@ const Testimonials: React.FC = () => {
 
       {/* Mobile Content */}
       <div className="w-full lg:hidden flex flex-col justify-center items-start gap-4">
-        <div className="w-full h-48 bg-slate-200 rounded-xl" />
+        <div className="w-full h-48 bg-slate-200 rounded-xl relative overflow-hidden">
+          <Image
+            src="/images/bishan-park-2.jpeg"
+            alt="Group fitness at Bishan Park"
+            fill
+            className="object-cover"
+          />
+        </div>
         <div className="w-full p-5 bg-lime-200 rounded-[20px] flex flex-col justify-start items-start gap-5">
           <div className="w-6 h-6 relative overflow-hidden">
             <div className="w-2.5 h-4 left-[0.81px] top-[5.31px] absolute bg-lime-700" />
@@ -63,16 +71,16 @@ const Testimonials: React.FC = () => {
 
       {/* Desktop Content */}
       <div className="w-full hidden lg:flex justify-start items-start gap-8">
-        <div className="w-96 h-[476px] bg-slate-200 rounded-[20px]" />
+        <div className="w-96 h-[476px] bg-slate-200 rounded-[20px] relative overflow-hidden">
+          <Image
+            src="/images/bishan-park-1.jpeg"
+            alt="Group fitness at Bishan Park"
+            fill
+            className="object-cover"
+          />
+        </div>
         <div className="flex-1 p-8 bg-lime-200 rounded-[20px] flex flex-col justify-start items-start gap-6">
-          <div className="w-8 h-8 relative overflow-hidden">
-            <div className="w-3.5 h-5 left-[1px] top-[6.54px] absolute text-lime-700 text-2xl">
-              &quot;
-            </div>
-            <div className="w-3.5 h-5 left-[17.49px] top-[6.55px] absolute text-lime-700 text-2xl">
-              &quot;
-            </div>
-          </div>
+          <div className="w-8 h-8 relative overflow-hidden"></div>
           <div className="w-full flex flex-col justify-start items-start gap-8">
             <p className="w-full text-stone-950 text-3xl font-medium leading-10">
               &quot;I lost 15 lbs in 2 months using their personalized training
@@ -87,7 +95,14 @@ const Testimonials: React.FC = () => {
         </div>
         <div className="flex flex-col justify-start items-end gap-64">
           <div className="flex justify-start items-end gap-6">
-            <div className="w-40 h-40 bg-slate-200 rounded-[20px]" />
+            <div className="w-40 h-40 bg-slate-200 rounded-[20px] relative overflow-hidden">
+              <Image
+                src="/images/bishan-park-4_compressed.jpg"
+                alt="Bishan Park workout"
+                fill
+                className="object-cover"
+              />
+            </div>
             <div className="flex flex-col justify-start items-start gap-2">
               <div className="text-slate-500 text-base font-normal leading-relaxed">
                 Next Customer

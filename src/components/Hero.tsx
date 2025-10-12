@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { heroDetails } from "@/data/hero";
 
 const Hero: React.FC = () => {
@@ -24,10 +25,31 @@ const Hero: React.FC = () => {
             </p>
             {/* Mobile image grid */}
             <div className="w-full lg:hidden flex justify-start items-start gap-4">
-              <div className="flex-1 h-44 bg-slate-200 rounded-2xl" />
-              <div className="flex-1 h-44 bg-slate-200 rounded-2xl" />
+              <div className="flex-1 h-44 bg-slate-200 rounded-2xl relative overflow-hidden">
+                <Image
+                  src="/images/bishan-park-1.webp"
+                  alt="Bishan Park workout"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <div className="flex-1 h-44 bg-slate-200 rounded-2xl relative overflow-hidden">
+                <Image
+                  src="/images/bishan-park-2.webp"
+                  alt="Kettlebell training"
+                  fill
+                  className="object-cover"
+                />
+              </div>
             </div>
-            <div className="w-full lg:hidden h-48 bg-slate-200 rounded-xl" />
+            <div className="w-full lg:hidden h-48 bg-slate-200 rounded-xl relative overflow-hidden">
+              <Image
+                src="/images/bishan-park-3.webp"
+                alt="Group fitness"
+                fill
+                className="object-cover"
+              />
+            </div>
           </div>
           <Link
             href={heroDetails.ctaLink}
@@ -40,10 +62,31 @@ const Hero: React.FC = () => {
         </div>
         {/* Desktop image grid */}
         <div className="hidden lg:flex flex-1 justify-end items-start gap-4">
-          <div className="w-80 h-[472px] bg-slate-200 rounded-[20px]" />
+          <div className="w-80 h-[472px] bg-slate-200 rounded-[20px] relative overflow-hidden">
+            <Image
+              src="/images/bishan-park-1.jpeg"
+              alt="Group fitness at Bishan Park"
+              fill
+              className="object-cover"
+            />
+          </div>
           <div className="flex flex-col justify-start items-start gap-4">
-            <div className="w-56 h-64 bg-slate-200 rounded-[20px]" />
-            <div className="w-56 h-44 bg-slate-200 rounded-[20px]" />
+            <div className="w-56 h-64 bg-slate-200 rounded-[20px] relative overflow-hidden">
+              <Image
+                src="/images/bishan-park-2.jpeg"
+                alt="Bishan Park workout"
+                fill
+                className="object-cover"
+              />
+            </div>
+            <div className="w-56 h-44 bg-slate-200 rounded-[20px] relative overflow-hidden">
+              <Image
+                src="/images/bishan-park-3.png"
+                alt="Kettlebell training"
+                fill
+                className="object-cover"
+              />
+            </div>
           </div>
         </div>
       </div>
