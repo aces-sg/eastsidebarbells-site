@@ -4,10 +4,11 @@ import { ctaDetails } from "@/data/cta"
 
 const CTA: React.FC = () => {
     return (
-        <section id="cta" className="w-full px-6 lg:px-40 py-14 bg-lime-200 flex flex-col lg:flex-row justify-start items-center gap-12 lg:gap-24 overflow-hidden relative">
+        <section id="cta" className="w-full px-4 lg:px-40 py-10 lg:py-14 bg-lime-200 flex flex-col lg:flex-row justify-start items-center gap-8 lg:gap-24 overflow-hidden relative">
+            {/* Decorative circles - visible on desktop */}
             <div className="hidden lg:block w-[907px] h-[907px] rounded-full border border-lime-50 absolute -left-96" />
             <div className="hidden lg:block w-[1184px] h-[1184px] rounded-full border border-lime-50 absolute -left-[500px]" />
-            <div className="flex-1 flex flex-col justify-center items-start gap-12 lg:gap-20 z-10">
+            <div className="w-full lg:flex-1 flex flex-col justify-center items-start gap-8 lg:gap-20 z-10">
                 <div className="w-full flex flex-col justify-start items-start gap-4">
                     <div className="h-10 px-4 pt-3.5 pb-4 bg-lime-100 rounded-[500px] inline-flex justify-center items-center gap-2 overflow-hidden">
                         <div className="justify-start text-stone-950 text-base font-semibold leading-tight">
@@ -30,10 +31,10 @@ const CTA: React.FC = () => {
                     </div>
                 </Link>
             </div>
-            <div className="flex flex-col justify-start items-start gap-6 z-10">
-                <div className="flex justify-start items-center gap-6">
+            <div className="w-full lg:w-auto flex flex-col justify-start items-start gap-4 lg:gap-6 z-10">
+                <div className="w-full flex justify-start items-center gap-4 lg:gap-6">
                     <div className="w-32 lg:w-44 h-40 lg:h-56 bg-white rounded-2xl" />
-                    <div className="w-64 lg:w-96 h-40 lg:h-56 bg-white rounded-2xl" />
+                    <div className="flex-1 lg:w-96 h-40 lg:h-56 bg-white rounded-2xl" />
                 </div>
                 <div className="w-full lg:w-[634px] h-32 lg:h-48 bg-white rounded-2xl" />
             </div>

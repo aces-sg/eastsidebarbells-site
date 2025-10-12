@@ -47,10 +47,10 @@ const Header: React.FC = () => {
                 <div className="hidden md:block">
                     <Link
                         href="#cta"
-                        className="h-11 px-6 pt-3.5 pb-4 rounded-lg border border-slate-500 inline-flex justify-center items-center gap-2 overflow-hidden hover:bg-slate-50 transition-colors"
+                        className="h-11 px-6 pt-3.5 pb-4 rounded-lg outline outline-1 outline-offset-[-1px] outline-slate-500 inline-flex justify-center items-center gap-2 overflow-hidden hover:bg-slate-50 transition-colors"
                     >
                         <div className="justify-start text-stone-950 text-base font-semibold leading-tight">
-                            Download App
+                            RSVP Today
                         </div>
                     </Link>
                 </div>

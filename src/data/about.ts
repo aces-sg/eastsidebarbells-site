@@ -1,24 +1,24 @@
 export const aboutData = {
     badge: "About Us",
-    description: "FitMove is designed for individuals and fitness teams who want to optimize their health journey with ease. Whether you're training at the gym or at home, FitMove provides intuitive tools that adapt to your lifestyle. Stay accountable & build momentum.",
+    description: "Eastsidebarbells exists to create community through fitness. We believe in simple, effective workouts that bring people from all backgrounds together to build strength, power, and lasting fitness.",
     stats: {
-        title: "Stay accountable & build",
+        title: "Coached. Connected. Stronger Together",
         items: [
             {
-                value: "50K+",
-                description: "Experience the benefits with 50,000+"
+                value: "30-minutes",
+                description: "The time it takes for a kettlebell workout"
             },
             {
-                value: "4.8",
-                description: "We're proud of our exceptional user"
+                value: "500+",
+                description: "Users of our Progress Logging App"
             },
             {
-                value: "120+",
-                description: "Over 120 curated training programs,"
+                value: "2024",
+                description: "Our 1-year anniversary"
             },
             {
                 value: "98%",
-                description: "A high retention rate shows customers"
+                description: "The people who return to our workouts"
             }
         ],
         ctaText: "Explore Our Story",

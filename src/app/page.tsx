@@ -1,6 +1,7 @@
 import Hero from "@/components/Hero";
 import About from "@/components/About";
 import CoreValues from "@/components/CoreValues";
+import Features from "@/components/Features";
 import HowItWorks from "@/components/HowItWorks";
 import Testimonials from "@/components/Testimonials";
 import Video from "@/components/Video";
@@ -15,6 +16,7 @@ const HomePage: React.FC = () => {
       <Hero />
       <About />
       <CoreValues />
+      <Features />
       <HowItWorks />
       <Testimonials />
       <Video />
