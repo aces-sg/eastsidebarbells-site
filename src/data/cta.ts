@@ -3,5 +3,7 @@ export const ctaDetails = {
     heading: "Track, Train, & Transform with Eastside App",
     subheading: "Stay on track wherever you go—download the Eastside Web App to stay accountable.",
     ctaText: "Access Now",
-    ctaLink: "#"
+    ctaLink: "#",
+    appStoreUrl: "#",
+    googlePlayUrl: "#"
 }
